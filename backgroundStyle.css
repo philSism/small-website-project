@@ -1,0 +1,551 @@
+html, body {
+    position: relative;
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-container {
+    min-height: 100%;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+
+/*-------------------- INDEX ----------*/
+
+#index-body{
+    background-image: url("images/fantasia.png");
+    background-color:black;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+#index-buttons{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.element {
+    display: block;
+    height: 50px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    border: 3px solid rgba(0,0,0,.3);
+    margin-bottom: 30px;
+}
+
+.one {
+    transform: rotate(40deg);
+    animation: one 2s infinite;
+    animation-direction: alternate;
+    background-color: #1fadf8;
+}
+
+.two {
+    transform: rotate(20deg);
+    animation: two 2s infinite;
+    animation-direction: alternate;
+    background-color: #831a4a;
+}
+
+.three {
+    transform: rotate(30deg);
+    animation: three 2s infinite;
+    animation-direction: alternate;
+    background-color: #439772;
+}
+
+@keyframes one {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(50deg);
+    }
+}
+
+@keyframes two {
+    0% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(-20deg);
+    }
+}
+
+@keyframes three {
+    0% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+}
+
+/*-------------------------- Friends -------------------*/
+
+.center{
+    font-size: 17px;
+    text-align: center;
+}
+
+.imgMinnie{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:10px;
+    width: 13%;
+    height: 13%;
+}
+
+.imgCenter{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:10px;
+    width: 10%;
+    height: 10%;
+}
+
+#images{
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align:center;
+}
+
+.par1 {
+    overflow:hidden;
+    border:2px black solid;
+    border-radius: 25px;
+    background-color:lightblue;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 250px;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.par1 p{
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#pluto.par1{
+    margin-bottom: 100px;
+}
+.par1 h3{
+    text-align: center;
+    font-family: 'Comic Sans MS';
+}
+
+.par2 {
+    overflow:hidden;
+    border-radius: 25px;
+    border:2px black solid;
+    background-color:lightblue;
+    margin-right:50px;
+    margin-top: 50px;
+    margin-left: 250px;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.par2 h3{
+    text-align: center;
+    font-family: 'Comic Sans MS';
+}
+
+.par2 p {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+
+
+/*---------------------- Quiz------------------------- */
+#quiz-body{
+    background-color: #EAF9F9;
+}
+
+.question{
+    text-align: center;
+    color: #ffff00;
+    font-family: Comic Sans MS;
+    font-size: 30px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.answers{text-align: center}
+
+.btn-group .answers {
+    background-color: #ff0000; /* Red */
+    color: white;
+    border-radius: 8px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 250px;
+    display: block;
+    margin: 13px auto; /*centering the buttons*/
+}
+
+
+.btn-group .answers:hover {
+    background-color: #ff3333;
+}
+
+.group .button {
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.group .button:hover {
+    background-color: #ff3333;
+}
+
+/*------------------ Navigation Bar ---------------*/
+
+header{
+    margin: 0;
+    width: 100%;
+    background-color: #3383ff;
+}
+
+#nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-li {
+    float:left;
+}
+
+.nav-li a, .dropbtn {
+    display: inline-block;
+    padding: 14px 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.dropdown {
+    display: inline-block;
+    float:left;
+}
+
+.nav-li a:hover, .dropdown:hover .dropbtn {
+    background-color: #2338fb;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3383ff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #2338fb;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*----------------- Content List ------------------------*/
+
+.content-ul {
+    list-style-type: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+}
+
+.content-li {
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+.content-item-left {
+    float: left;
+}
+
+.content-item-right {
+    float: right;
+}
+
+.content-item-left img, .content-item-right img {
+    display: block;
+    border-radius: 20px;
+    padding: 5px;
+    width: 300px;
+}
+
+.content-txt-left {
+    margin-left: 350px;
+}
+
+.content-txt-right {
+    text-align: right;
+    margin-right: 350px;
+}
+
+/*--------------------------- Text ---------------------*/
+
+.paddings {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#index-heading {
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	padding: 10px;
+}
+
+.heading {
+    font-size: 30px;
+}
+
+.sub-heading {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 17px;
+}
+
+.title-text {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*----------------- Polaroid Images -------------------------*/
+
+.polaroid-left {
+    float: left;
+    width: 250px;
+    display:inline-block;
+    margin-left: 150px;
+    margin-top: 25px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.polaroid-right {
+    float: right;
+    width: 250px;
+    display:inline-block;
+    margin-right: 150px;
+    margin-top: 25px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mickey-img {
+    width: 100%;
+}
+
+.container {
+    background-color: #ffdc17;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/*--------------------------------- Filmography -----------------------*/
+
+.film-padding{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+}
+
+.film-title-padding{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+}
+
+.film-text{
+    font-size: 17px;
+    text-align: left;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.film-div{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* unvisited link */
+.film-a:link {
+    color: #ad352f;
+    text-decoration: none;
+}
+
+/* visited link */
+.film-a:visited {
+    color: #2624c4;
+    text-decoration: none;
+}
+
+/* mouse over link */
+.film-a:hover {
+    color: #c40711;
+    text-decoration: none;
+}
+
+/* selected link */
+.film-a:active {
+    color: #ff712c;
+    text-decoration: none;
+}
+
+.ccontainer {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom:10px;
+    margin-left: 20px;
+    background-color: rgba(99, 162, 255, 0.51);
+    border-radius: 10px;
+    border-left: 6px solid #3383ff;
+    border-right: 6px solid #3383ff;
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+
+.ccontainer ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ccontainer li{
+    text-align: center;
+    font-size: 120%;
+}
+
+.ccontainer a:link, .ccontainer a:visited {
+    background-color: transparent;
+    color: white;
+    padding-top: 3px;
+    width: 100%;
+    padding-bottom:3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.ccontainer a:hover, .ccontainer a:active {
+    background-color: #3383ff;
+    padding-top: 3px;
+    width:101%;
+    padding-bottom:3px;
+    text-align: center;
+    display: inline-block;
+}
+
+.imgRight{
+    float:right;
+    position:relative;
+    padding-left:10px;
+    padding-bottom:10px;
+}
+
+.imgLeft{
+    float:left;
+    position: relative;
+    padding-right:10px;
+    padding-bottom:10px;
+}
+
+aside {
+    float: right;
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+
+/*-------------------------- Footer -------------------------*/
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #3383ff;
+    color: white;
+}
+
+#footer-nav-ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.footer-nav-li {
+    float:left;
+}
+
+.footer-nav-li a {
+    display: inline-block;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+#copyrights {
+    float: right;
+    display: inline-block;
+    margin: 11px;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
